@@ -1,0 +1,38 @@
+{
+  "name": "thinx-firmware",
+  "version": "0.0.1",
+  "description": "THiNX IoT Remote Device Management client library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/suculent/thinx-firmware-js.git"
+  },
+  "keywords": [
+    "THiNX",
+    "IoT",
+    "device",
+    "management"
+  ],
+  "author": "Matej Sychra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suculent/thinx-firmware-js/issues"
+  },
+  "homepage": "https://github.com/suculent/thinx-firmware-js#readme",
+  "devDependencies": {
+    "rollbar": "^2.3.9"
+  },
+  "dependencies": {
+    "fs-extra": "^1.0.0",
+    "getmac": "^1.4.0",
+    "https": "^1.0.0",
+    "mdns-discovery": "^0.2.6",
+    "mqtt": "^2.16.0",
+    "node-persist": "^2.1.0",
+    "ssl-root-cas": "^1.2.5",
+    "typeof": "^1.0.0"
+  }
+}

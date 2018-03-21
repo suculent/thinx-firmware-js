@@ -1,0 +1,25 @@
+{
+  "note": "This is an auto-generated file, it may be re-written by THiNX on cloud build.",
+  "rollbar": {
+    "client_token": "aba427af46ab4f328e54adda69e7f3c1"
+  },
+  "thinx": {
+    "cloud_url": "thinx.cloud",
+    "mqtt_url": "thinx.cloud",
+    "owner": "cedc16bb6bb06daaa3ff6d30666d91aacd6e3efbf9abbc151b4dcade59af7c12",
+    "api_key": "a854724bc000e030b588370ad8cf31aa95faaf18f33685afa6624c830b920063",
+    "device_alias": "thinx-app-js",
+    "app_version": "thinx-app-js:0.0.1:2018-03-21",
+    "firmware_version": "thinx-lib-js:0.0.1:2018-03-21",
+    "firmware_version_short": "0.0.1",
+    "platform": "nodejs",
+    "mqtt_port": 1883,
+    "api_port": 7443,
+    "auto_update": false,
+    "forced_update": false,
+    "env": {
+      "THINX_ENV_SSID": "",
+      "THINX_ENV_PASS": ""
+    }
+  }
+}
