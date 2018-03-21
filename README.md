@@ -10,48 +10,31 @@ This package is using Rollbar for remote logging while in early development stag
 
 * Device Simulator
 
-# Usage
+### Usage
 
-> npm install thinx-firmware-js --save
-
-> TODO: Finish this documentation.
-
-## Definition
-
-### THiNX Library
-
-The singleton class started by library should not require any additional parameters except for required API Key and Owner ID.
+The class started by library is using configuration file in `conf/config.json`.
 
 Connects to WiFI and reports to main THiNX server; or through proxy.
 
 ```javascript
-var thx = new THiNX(api_key, owner_id);
 
-thx.setMQTTCallback(function() {
+var defaults = require("./conf/config.json");
 
+var thinx = require('./lib/thinx/thinx.js');
+
+thinx.init(defaults.thinx.api_key, defaults.thinx.owner);
+
+thinx.setMQTTCallback(function(message) {
+  // incoming mqtt message
 });
 
-thx.setPushConfigCallback(function() {
-
+thinx.setPushConfigCallback(function(configuration) {
+  // incoming configuration change
 });
 
-thx.setCheckinCallback(function() {
-
+thinx.setCheckinCallback(function() {
+  // checkin completed
 });
-
-/* TODO: make event dispatcher/listener to allow this:
-thx.on('error') = function() {
-
-};
-
-thx.on('mqtt') = function() {
-
-};
-
-thx.on('checkin') = function() {
-
-};
-*/
 }
 
 ```
@@ -62,26 +45,25 @@ thx.on('checkin') = function() {
 
 1. THiNXLib is built with null default values (mostly).
 
-2. THiNXLib is configured from thinx.json file, which will be overwritten by the THiNX CI for each build.
+2. THiNXLib is configured from thinx.json file.
 
-3. Additional data are loaded local storage, where saved Owner ID takes precedence before user value to support OTA device migration.
+3. Additional data are saved into local storage, where saved Owner ID takes precedence before user value to support OTA device migration.
 
 4. On successful checkin, incoming data incl. UDID (unique device identifier) and Owner ID is stored for further use after reboot.
 
 5. Configuration Push can be used to inject custom Environment Variables over the network, without need to have them stored anywhere in the code on the device (e.g. WiFi credentials)
 
-
 ### Finalize callback
 
 When THiNX connects safely to network and connection is working, you'll get this callback.
 ```
-thx.setFinalizeCallback(function() {
+thx.setCheckinCallback(function() {
   /* Called after library gets connected and registered */
 });
 ```
 
 ### Location Support
 
-You can update your device's location aquired by WiFi library or GPS module using `thx.setLocation(double lat, double lon)`.
+You can update your device's location acquired e.g. by GPS module using `thx.setLocation(double lat, double lon)`.
 
 Device will be forced to checked in when you change those values.
