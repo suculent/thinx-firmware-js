@@ -2,7 +2,7 @@
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/8dded023f3d14a69b3c38c9f5fd66a40)](https://www.codacy.com/app/suculent/thinx-firmware-js?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=suculent/thinx-firmware-js&amp;utm_campaign=Badge_Grade)
 
-JavaScript client library for Remote Things Management using THiNX platform.
+JavaScript client library for [Remote Things Management](https://rtm.thinx.cloud) using [THiNX](https://thinx.cloud) platform.
 
 This package is using Rollbar for remote logging while in early development stages. If you don't need Rollbar, feel free to remove it (as it will be removed or optional later).
 
