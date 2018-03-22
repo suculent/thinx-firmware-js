@@ -18,13 +18,13 @@ JavaScript client library for [Remote Things Management](https://rtm.thinx.cloud
 
 ## Using NPM
 
-1. Install the node package: `npm install thinx-firmware -g`
+1. Install the node package: `npm install thinx-firmware`
 2. Create ./conf/config.json file and insert your THiNX API Key and Owner ID
 3. Run following code:
 
 ```javascript
 
-var thinx = require('thinx');
+var thinx = require('thinx-firmware');
 var defaults = require("./conf/config.json");
 thinx.init(defaults.thinx.api_key, defaults.thinx.owner);
 
