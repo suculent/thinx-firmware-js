@@ -1,0 +1,44 @@
+{
+	"mac": "5C:CF:7F:49:9D:E1",
+	"firmware": "thinx-lib-esp8266-arduino:2.1.140",
+	"checksum": null,
+	"alias": "TD1208+Wemos2",
+	"owner": "cedc16bb6bb06daaa3ff6d30666d91aacd6e3efbf9abbc151b4dcade59af7c12",
+	"source": "ee936045ac37fe85048f1fea6deba0894d199507fb87385548cc7e7bceb6691f",
+	"version": "2.0.140",
+	"platform": "NodeJS",
+	"lastupdate": "2018-03-02T09:22:42.831Z",
+	"description": "Sample device description for Slackhook Status Transformer Example",
+	"status": "Battery 3.57V",
+	"snr": " ",
+	"rssi": " ",
+	"station": " ",
+	"lat": "0.00",
+	"lon": "0.00",
+	"commit": "unknown",
+	"build_id": "c4de6e80-ff8e-11e7-909b-c561e108ccae",
+	"tags": [
+		"tag",
+		"test"
+	],
+	"transformers": [
+		"1",
+		"89889b2ae61a398330e7a50338f5d7aa98c9a807809e6fc8cba8b3fa89494a8d"
+	],
+	"category": "yellow-crusta",
+	"checkins": [
+		"2018-03-02T04:39:46.303Z",
+		"2018-03-02T05:35:57.531Z",
+		"2018-03-02T05:36:01.043Z",
+		"2018-03-02T06:32:14.878Z",
+		"2018-03-02T06:32:17.611Z",
+		"2018-03-02T07:29:32.966Z",
+		"2018-03-02T07:29:35.740Z",
+		"2018-03-02T08:26:02.444Z",
+		"2018-03-02T08:26:05.937Z",
+		"2018-03-02T09:22:40.113Z",
+		"2018-03-02T09:22:42.831Z"
+	],
+	"status_raw": "Battery 3.57V",
+	"status_error": null
+}
