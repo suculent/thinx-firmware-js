@@ -21,3 +21,19 @@ var thinx = require('./lib/thinx/thinx.js');
 thinx.init(defaults.thinx.api_key, defaults.thinx.owner);
 
 Rollbar.info("thinx-lib-js started", {postId: 123});
+
+/*
+  Custom callbacks
+*/
+
+thinx.setMQTTCallback(function(message) {
+  // incoming mqtt message
+});
+
+thinx.setPushConfigCallback(function(configuration) {
+  // incoming configuration change
+});
+
+thinx.setCheckinCallback(function() {
+  // checkin completed
+});
