@@ -2,40 +2,35 @@
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/8dded023f3d14a69b3c38c9f5fd66a40)](https://www.codacy.com/app/suculent/thinx-firmware-js?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=suculent/thinx-firmware-js&amp;utm_campaign=Badge_Grade)
 
-JavaScript client library for [Remote Things Management](https://rtm.thinx.cloud) using [THiNX](https://thinx.cloud) platform.
-
-This package is using Rollbar for remote logging while in early development stages. If you don't need Rollbar, feel free to remove it (as it will be removed or optional later).
+JavaScript client library for [Remote Things Management](https://rtm.thinx.cloud) using [THiNX](https://thinx.cloud) platform. Connects to WiFI and reports to main THiNX server; or through thinx-connect proxy, if found on your local network.
 
 # What's New
 
-* Device Simulator
+* Example of Slack webhook as Status Transformer
 
-### Usage
+## Installation
 
-The class started by library is using configuration file in `conf/config.json`.
+## QuickStart
 
-Connects to WiFI and reports to main THiNX server; or through proxy.
+1. Fork the base repository.
+2. Edit configuration file in `conf/config.json`.
+3. Start with `node test.js`
+
+## Using NPM
+
+1. Install the node package: `npm install thinx-firmware -g`
+2. Create ./conf/config.json file and insert your THiNX API Key and Owner ID
+3. Run following code:
 
 ```javascript
 
+var thinx = require('thinx');
 var defaults = require("./conf/config.json");
-
-var thinx = require('./lib/thinx/thinx.js');
-
 thinx.init(defaults.thinx.api_key, defaults.thinx.owner);
 
-thinx.setMQTTCallback(function(message) {
-  // incoming mqtt message
-});
-
-thinx.setPushConfigCallback(function(configuration) {
-  // incoming configuration change
-});
-
 thinx.setCheckinCallback(function() {
-  // checkin completed
+  console.log("Checkin completed.");
 });
-}
 
 ```
 
