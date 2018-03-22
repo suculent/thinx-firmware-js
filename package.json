@@ -1,6 +1,6 @@
 {
   "name": "thinx-firmware",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "THiNX IoT Remote Device Management client library",
   "main": "index.js",
   "scripts": {
