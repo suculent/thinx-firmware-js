@@ -19,5 +19,9 @@ var rollbar = new Rollbar({
 
 var thinx = require('./lib/thinx/thinx.js');
 thinx.init(defaults.thinx.api_key, defaults.thinx.owner);
+thinx.setCheckinCallback(function(){
+  console.log("Test completed, exiting...");
+  process.exit();
+});
 
 Rollbar.info("thinx-lib-js started", {postId: 123});
