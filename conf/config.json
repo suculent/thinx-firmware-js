@@ -1,8 +1,4 @@
 {
-  "note": "This is an auto-generated file, it may be re-written by THiNX on cloud build.",
-  "rollbar": {
-    "client_token": "437d4f88c34b40e38b5a6c87f8b0d729"
-  },
   "thinx": {
     "cloud_url": "thinx.cloud",
     "mqtt_url": "thinx.cloud",

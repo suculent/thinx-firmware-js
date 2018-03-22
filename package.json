@@ -1,6 +1,6 @@
 {
   "name": "thinx-firmware",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "THiNX IoT Remote Device Management client library",
   "main": "index.js",
   "scripts": {
@@ -22,9 +22,6 @@
     "url": "https://github.com/suculent/thinx-firmware-js/issues"
   },
   "homepage": "https://github.com/suculent/thinx-firmware-js#readme",
-  "devDependencies": {
-    "rollbar": "^2.3.9"
-  },
   "dependencies": {
     "fs-extra": "^1.0.0",
     "getmac": "^1.4.0",
