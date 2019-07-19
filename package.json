@@ -25,12 +25,12 @@
   },
   "homepage": "https://github.com/suculent/thinx-firmware-js#readme",
   "dependencies": {
-    "fs-extra": "^1.0.0",
+    "fs-extra": "^8.1.0",
     "getmac": "^1.4.0",
     "https": "^1.0.0",
     "mdns-discovery": "^0.2.6",
-    "mqtt": "^2.16.0",
-    "node-persist": "^2.1.0",
+    "mqtt": "^3.0.0",
+    "node-persist": "^3.0.5",
     "ssl-root-cas": "^1.2.5",
     "typeof": "^1.0.0",
     "snyk": "^1.59.1"

@@ -1,6 +1,6 @@
 # THiNX Lib (JavaScript)
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/8dded023f3d14a69b3c38c9f5fd66a40)](https://www.codacy.com/app/suculent/thinx-firmware-js?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=suculent/thinx-firmware-js&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/8dded023f3d14a69b3c38c9f5fd66a40)](https://www.codacy.com/app/suculent/thinx-firmware-js?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=suculent/thinx-firmware-js&amp;utm_campaign=Badge_Grade) [![Greenkeeper badge](https://badges.greenkeeper.io/suculent/thinx-firmware-js.svg)](https://greenkeeper.io/)
 
 JavaScript client library for [Remote Things Management](https://rtm.thinx.cloud) using [THiNX](https://thinx.cloud) platform. Connects to WiFI and reports to main THiNX server; or through thinx-connect proxy, if found on your local network.
 
